@@ -1,0 +1,115 @@
+#intro{
+    height: 100vh;
+}
+
+.intro_inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.intro_title{
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 800;
+    white-space: nowrap;
+    text-indent: -.5vw;
+    letter-spacing: -.03vw;
+}
+
+.intro_text{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.intro_text .text{
+    font-size: 3vw;
+    line-height: 1.5;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.intro_text .img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 270px;
+    overflow: hidden;
+    filter: grayscale(100%);
+    opacity: 0;
+    background-image: url(../../img/img1.png);
+}
+
+.intro_text:hover .text{
+    opacity: 0;
+    z-index: -1;
+}
+.intro_text:hover .img{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.intro_lines{
+    width: 100%;
+}
+
+.intro_lines.bottom .line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    margin-top: .5vw;
+    margin-bottom: 0;
+    display: none;
+}
+
+.intro_lines.bottom .line:nth-child(1){
+    height: 25px;
+}
+.intro_lines.bottom .line:nth-child(2){
+    height: 17px;
+}
+.intro_lines.bottom .line:nth-child(3){
+    height: 13px;
+}
+.intro_lines.bottom .line:nth-child(4){
+    height: 9px;
+}
+.intro_lines.bottom .line:nth-child(5){
+    height: 5px;
+}
+.intro_lines.bottom .line:nth-child(6){
+    height: 2px;
+}
+.intro_lines.bottom .line:nth-child(7){
+    height: 1px;
+}
+/* ------------------------------------ */
+
+@media screen and (max-width:768px){
+    .intro_lines.bottom .line{
+        display: block;
+    }
+    .intro_text .text{
+        font-size: 24px;
+    }
+    
+}

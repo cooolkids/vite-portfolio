@@ -1,22 +1,22 @@
 :root {
         /* 메인영어폰트 */
-        --mainEng-font:
+        --mainEng-font:;
         /* 메인한글폰트 */
-        --mainKor-font:
+        --mainKor-font:;
         /* 메인숫자폰트 */
-        --mainNum-font:
+        --mainNum-font:;
         /* 메인bg컬러 */
-        --mainBg-color:
+        --mainBg-color:;
         /* 서브bg100 */
-        --subBg100:
+        --subBg100:;
         /* 서브bg200 */
-        --subBg200:
+        --subBg200:;
         /* 서브bg300 */
-        --subBg300:
+        --subBg300:;
         /* 서브bg400 */
-        --subBg400:
+        --subBg400:;
         /* 서브bg500 */
-        --subBg500: 
+        --subBg500: ;
         
     --white:#fff;
     --black: #000;
@@ -43,9 +43,10 @@
     :root {
         font-size: 14px;
     }
-    body{
+   
+
+} 
+body{
         color: var(--black);
         background-color: var(--mainBg-color);
     }
-
-}
