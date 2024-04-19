@@ -58,13 +58,12 @@
 .header_nav_mobile {
     cursor: pointer;
     display: none;
-
 }
 
 .header_nav_mobile span{
     display: block;
     width: 40px;
-    height: 2px;
+    height: 3px;
     background-color: var(--black);
     margin-top: 0;
     position: relative;
@@ -72,7 +71,7 @@
 .header_nav_mobile span::before{
     content: '';
     width: 40px;
-    height: 2px;
+    height: 3px;
     background-color: var(--black);
     top: 10px;
     right: 0;
@@ -82,7 +81,7 @@
 .header_nav_mobile span::after{
     content: '';
     width: 40px;
-    height: 2px;
+    height: 3px;
     background-color: var(--black);
     bottom: 10px;
     left: 0;

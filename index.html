@@ -1,37 +1,241 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/tiger.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite portfolio</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-  </head>
-  <body>
-    <header id="header" role="banner">
-      <div class="header__inner">
-        <div class="header_logo">
-          <a href="#">PortFolio</a>
-          <em>UX/UI DESIGNER</em>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/tiger.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite portfolio</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <header id="header" role="banner">
+    <div class="header_inner">
+      <div class="header_logo">
+        <a href="#">PortFolio</a>
+        <em>UX/UI DESIGNER</em>
+      </div>
+      <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu"
+      aria-expanded="false">
+        <ul>
+          <li><a href="#Intro">Intro</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Graphics">Graphics</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </nav>
+      <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main id="main" role="main">
+    <section id="intro">
+      <div class="intro_inner">
+        <h1 class="intro_title">UX/UI DESIGNER</h1>
+        <div class="intro_text">
+          <div class="text">
+            <p>새로운 결과물과</p>
+            <p>꾸준히 노력하며</p>
+            <p>더 높이 비상할 수 있는</p>
+            <p>퍼블리셔가 되겠습니다.</p>
+          </div>
+          <div class="img"></div>
         </div>
-        <nav class="header_nav" role="navigation" aria-label="메인메뉴">
-          <ul>
-            <li><a href="#Intro">Intro</a></li>
-            <li><a href="#Project">Project</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Graphics">Graphics</a></li>
-            <li><a href="#About">About</a></li>
-          </ul>
-        </nav>
-        <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu"
-        role="button" tabindex="0">
-          <span></span>
+        <div class="intro_lines bottom">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
       </div>
-    </header>
-    <main id="main" role="main">
-     
-    </main>
-   <script type="module" src="./src/js/main.js"></script>
-  </body>
+
+
+    </section>
+    <section id="project">
+      <div class="pf_inner">
+        <h2 class="pf_title">
+          project
+          <em>작업물</em>
+        </h2>
+        <div class="pf_wrap">
+          <article class="pf_item s1">
+            <span class="num">
+              1.
+            </span>
+            <div class="text">
+              <div>WEB project</div>
+              <div>teamwork renewal</div>
+              <div>webstandard</div>
+            </div>
+            <h3>그라운드시소 리뉴얼</h3>
+            <div class="btn">
+              <a href="#">프로세서보기</a>
+              <a href="#">figma storyboard</a>
+              <a href="#">상세보기</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production period:02.05~02.23</span>
+              <span>use stack:html/scss,jqury,vanila js</span>
+            </div>
+          </article>
+          <article class="pf_item s2">
+            <span class="num">
+              2.
+            </span>
+            <div class="text">
+              <div>APP project</div>
+              <div>develop application</div>
+              <div>appstandard</div>
+            </div>
+            <h3>MYSELF 앱 만들기</h3>
+            <div class="btn">
+              <a href="#">프로세서보기</a>
+              <a href="#">figma storyboard</a>
+              <a href="#">상세보기</a>
+            </div>
+            <div class="info">
+              <span>app coding</span>
+              <span>production period:03.05~03.23</span>
+              <span>use stack:html/scss,jqury,vanila js</span>
+            </div>
+          </article>
+          <article class="pf_item s3">
+            <span class="num">
+              3.
+            </span>
+            <div class="text">
+              <div>WEB project</div>
+              <div>teamwork renewal</div>
+              <div>webstandard</div>
+            </div>
+            <h3>설화수 홈페이지</h3>
+            <div class="btn">
+              <a href="#">프로세서보기</a>
+              <a href="#">상세보기</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production period:03.25~04.13</span>
+              <span>use stack:html/scss,jqury,vanila js</span>
+            </div>
+          </article>
+          <article class="pf_item s4">
+            <span class="num">
+              4.
+            </span>
+            <div class="text">
+              <div>website making</div>
+              <div>web renewal</div>
+              <div>webstandard</div>
+            </div>
+            <h3>반응형 웹페이지</h3>
+            <div class="btn">
+              <a href="#">프로세서보기</a>
+              <a href="#">figma storyboard</a>
+              <a href="#">상세보기</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production period:04.18~04.30</span>
+              <span>use stack:html/scss,jqury,vanila js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <div class="work_inner">
+        <h2 class="work_title">
+          publishing
+          <em>작업물</em>
+        </h2>
+        <div class="work_wrap">
+          <article class="work_item w1">
+            <span class="num">01.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/watcha.png" alt=""></a>
+            <h3 class="title">watcha</h3>
+            <p class="desc">Css Transform</p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w2">
+            <span class="num">02.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/mugo.png" alt=""></a>
+            <h3 class="title">mugo</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w3">
+            <span class="num">03.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/woodam.png" alt=""></a>
+            <h3 class="title">WODAMLIGHTING</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w4">
+            <span class="num">04.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/groundseesaw.png" alt=""></a>
+            <h3 class="title">groundseesaw</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w5">
+            <span class="num">05.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/hakit.png" alt=""></a>
+            <h3 class="title">hakit</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w6">
+            <span class="num">06.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/beanpole.png" alt=""></a>
+            <h3 class="title">beanpole</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w7">
+            <span class="num">07.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/vans.png" alt=""></a>
+            <h3 class="title">vans</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w8">
+            <span class="num">08.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/10x10.png" alt=""></a>
+            <h3 class="title">10x10</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w9">
+            <span class="num">09.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/sulwhasoo.png" alt=""></a>
+            <h3 class="title">sulwhasoo</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="work_item w10">
+            <span class="num">10.</span>
+            <a href="#" target="_blank" class="img"><img src="./src/img/clio.png" alt=""></a>
+            <h3 class="title">clio</h3>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="site">사이트보기</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <section id="graphics"></section>
+    <section id="about"></section>
+
+  </main>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>

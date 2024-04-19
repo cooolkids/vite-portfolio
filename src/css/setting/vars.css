@@ -5,19 +5,19 @@
         --mainKor-font:;
         /* 메인숫자폰트 */
         --mainNum-font:;
-        /* 메인bg컬러 */
-        --mainBg-color:;
+        /* 메인bg컬러 */ 
+        --mainBg-color:#FFF9EF;
         /* 서브bg100 */
-        --subBg100:;
+        --subBg100:#D0E4FF;
         /* 서브bg200 */
-        --subBg200:;
+        --subBg200:#FADF54;
         /* 서브bg300 */
-        --subBg300:;
+        --subBg300:#FC855A;
         /* 서브bg400 */
-        --subBg400:;
+        --subBg400:#344EAD;
         /* 서브bg500 */
-        --subBg500: ;
-        
+        --subBg500: #091F5B;
+                    
     --white:#fff;
     --black: #000;
     --black100: #2b2b2b;
