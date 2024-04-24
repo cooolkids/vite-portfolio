@@ -9,7 +9,7 @@ export function intro(){
         backgroundPosition:(-offsetValue*frameCount)+'px',
         ease:'steps('+frameCount+')',
         scrollTrigger:{
-            trigger:'#intro',
+            trigger:'#Intro',
             start:'top top',
             end:'+='+(frameCount*offsetValue),
             pin:true,
