@@ -7,7 +7,7 @@ export function work(){
         xPercent:-100*(horSection.length - 1),
         ease:"none",
         scrollTrigger:{
-            trigger:"#work",
+            trigger:"#Work",
             start:'top 56px',
             end:'+=4000',
             pin:true,

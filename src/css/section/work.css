@@ -1,4 +1,4 @@
-#work {
+#Work {
     width: 100%;
     margin-top: 10vh;
     overflow: hidden;
@@ -76,21 +76,18 @@
     transition: .35s;
 }
 
-/* .work_item .img img{
-    width: 10%;
-} */
 
 .work_item:hover .img {
     margin-top: 0px;
 }
 
 .work_item .img img {
-    filter: saturate(0%);
+    filter: grayscale(100%);
     transition: .35s;
 }
 
 .work_item .img:hover img {
-    filter: saturate(100%);
+    filter: grayscale(0%);
 }
 
 .work_item.w1 {
