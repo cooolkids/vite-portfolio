@@ -49,7 +49,7 @@
 .img_box::before{
     position: absolute;   
     content: '';
-    width: 0%;
+    width: 100%;
     height:100%;
     background-color: var(--point);
     left: 0;
@@ -63,7 +63,7 @@
     position: absolute;   
     content: '';
     width: 100%;
-    height:0%;
+    height:100%;
     background-color: #13213C;
     left: 0;
     top: 0;
@@ -73,10 +73,10 @@
 }
 
 .img_box.active::before{
-    width: 100%;
+    height: 0;
 }
 .img_box.active::after{
-    height: 100%;
+    height: 0;
 }
 
 .graphics_wrap .stage .img_text {
@@ -90,14 +90,14 @@
 
 .img_text{
     position: relative;
-    top:-250px;
-    opacity: 1;
+    top: -280px;
+    opacity: 0;
     transition: .4s;
 }
 
 .img_text.active{
-    opacity: 0;
-    top: -200px;
+    opacity: 1;
+    top: -230px;
 }
 
 
