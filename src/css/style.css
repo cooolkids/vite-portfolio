@@ -7,11 +7,11 @@
 @import url(setting/reset.css);
 
 /* section */
-@import url(section/intro.css);
-@import url(section/header.css);
-@import url(section/about.css);
-@import url(section/graphics.css);
-@import url(section/project.css);
-@import url(section/work.css);
+@import url(section//intro.css);
+@import url(section//header.css);
+@import url(section//about.css);
+@import url(section//graphics.css);
+@import url(section//project.css);
+@import url(section//work.css);
 @import url(section/splide.css);
 

@@ -1,5 +1,6 @@
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
 export function work(){
      gsap.registerPlugin(ScrollTrigger)
      const horSection=gsap.utils.toArray('.work_item')
