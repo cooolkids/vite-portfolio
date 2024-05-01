@@ -2,22 +2,17 @@
     width: 100%;
     height: 100%;
     padding: 16px;
-    background: var(--black);
 }
 
-.graph_title em {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2;
-}
 
 .graph_title {
     position: sticky;
     top: 70px;
     left: 0;
     width: 100%;
-    height: 5vw;
-    font-size: 3vw;
+    height: 6vw;
+    font-size: 4vw;
+    font-weight: 900;
     line-height: 1.2;
     font-family: var(--mainKor-font);
     text-transform: uppercase;
@@ -26,84 +21,24 @@
     margin-bottom: 100px;
 }
 
-.graphics_wrap {
-    width: 70%;
+.stage {
+    width: 80%;
     margin: auto;
 }
 
-.graphics_wrap img {
+.stage img {
     width: 100%;
     transition: .35s;
 }
 
-.graphics_wrap .stage1 .inner {
+.stage .inner ul {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.graphics_wrap .stage1 .img_box {
-    width: 60%;
-}
-
-.graphics_wrap .stage1 .img_text {
-    width: 40%;
-}
-
-.graphics_wrap .stage1 .img_text p {
-    line-height: 1.6px;
-    color: var(--white);
-}
-
-.graphics_wrap .stage1 .img_text h3 {
-    color: var(--mainBg-color);
-    font-weight: 500;
-    font-size: 3vw;
-    margin-bottom: 20px;
-}
-
-.graphics_wrap .stage2 {
-    padding: 10% 0;
-}
-
-.graphics_wrap .stage2 .img_text{
-    color: var(--white);
-}
-
-.graphics_wrap .stage2 ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.graphics_wrap .stage2 ul li {
-    width: 28%;
-    margin-bottom: 50px;
-}
-
-.graphics_wrap .stage2 .img_text .title1 {
-    font-size: 3vw;
-    margin-bottom: 50px;
-    color: transparent;
-}
-
-.graphics_wrap .stage2 .img_text .title2 {
-    font-size: 1.5vw;
-}
-
-.graphics_wrap .stage2 ul.size li:nth-child(1) {
-    width: 52%;
-    margin-left: 10%;
-}
-
-
-.graphics_wrap .stage2 .img_text.size{
-    position: relative;
-    margin-top: -100px;
-}
-
-/* .graphics_wrap .img_box:hover img {
-    filter: brightness(100%);
-} */
 
 .img_box{
     position: relative;
@@ -114,9 +49,9 @@
 .img_box::before{
     position: absolute;   
     content: '';
-    width: 100%;
+    width: 0%;
     height:100%;
-    background-color: blue;
+    background-color: var(--point);
     left: 0;
     top: 0;
     z-index: 2;
@@ -128,8 +63,8 @@
     position: absolute;   
     content: '';
     width: 100%;
-    height:100%;
-    background-color: #000;
+    height:0%;
+    background-color: #13213C;
     left: 0;
     top: 0;
     z-index: 2;
@@ -138,20 +73,63 @@
 }
 
 .img_box.active::before{
-    height: 0;
+    width: 100%;
 }
 .img_box.active::after{
-    height: 0;
+    height: 100%;
+}
+
+.graphics_wrap .stage .img_text {
+    width: 40%;
+}
+
+.graphics_wrap .stage .img_text p {
+    line-height: 1.6px;
+    color: var(--white);
 }
 
 .img_text{
     position: relative;
-    top: 50px;
-    opacity: 0;
+    top:-250px;
+    opacity: 1;
     transition: .4s;
 }
 
 .img_text.active{
-    opacity: 1;
-    top:0px
+    opacity: 0;
+    top: -200px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .graphics_inner .inner ul{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .graphics_inner .inner ul li{
+        width: 30%;
+    }
+    .graph_title{
+        width: 100%;
+        margin-bottom: 16px;
+        font-size: 30px;
+        height: auto;
+        top: -30px;
+    }
+    .img_text{
+        position: relative;
+        right: -120px;
+        top: -100px;
+        opacity: 0;
+        transition: .4s;
+    }
+    
+    .img_text.active{
+        opacity: 1;
+        top: -50px;
+    }
+    
 }

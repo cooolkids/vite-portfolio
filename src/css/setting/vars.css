@@ -1,52 +1,53 @@
 :root {
-        /* 메인영어폰트 */
-        --mainEng-font:;
-        /* 메인한글폰트 */
-        --mainKor-font:;
-        /* 메인숫자폰트 */
-        --mainNum-font:;
-        /* 메인bg컬러 */ 
-        --mainBg-color:#FFF9EF;
-        /* 서브bg100 */
-        --subBg100:#D0E4FF;
-        /* 서브bg200 */
-        --subBg200:#FADF54;
-        /* 서브bg300 */
-        --subBg300:#FC855A;
-        /* 서브bg400 */
-        --subBg400:#344EAD;
-        /* 서브bg500 */
-        --subBg500: #091F5B;
-                    
-    --white:#fff;
-    --black: #000;
-    --black100: #2b2b2b;
-    --black200: #444444;
-    --black300: #666666;
-    --black400: #dddddd;
+    /* 메인영어폰트 */
+    --mainEng-font:"Montserrat";
+    /* 메인한글폰트 */
+    --mainKor-font:"Nanum Gothic Coding";
+    /* 메인숫자폰트 */
+    --mainNum-font:"Black Han Sans";
+    /* 메인bg컬러 */ 
+    --mainBg-color:#3E84A8;
+    /* 서브bg100 */
+    --subBg100:#28527A;
+    /* 서브bg200 */
+    --subBg200:#BAD6EB;
+    /* 서브bg300 */
+    --subBg300:#A3C5F2;
+    /* 서브bg400 */
+    --subBg400:#3E84A8;
+    /* 서브bg500 */
+    --subBg500: #EDF0F5;
+                
+--white:#fff;
+--black: #0B111D;
+--black100: #1a1a1a;
+--black200: #2e2e2e;
+--black300: #666666;
+--black400: #dddddd;
+--point:#FABF25;
 
-    font-family: var(--mainEng-font), var(--mainKor-font);
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    /* 아이폰 가로 모드에서 글씨 확대 금지 */
-    -webkit-text-size-adjust: 100%;
-    /* 폰트를 부드럽게 랜더링하기 위한 속성 */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    font-synthesis: none;
+font-family: var(--mainEng-font), var(--mainKor-font);
+font-size: 16px;
+line-height: 1.5;
+font-weight: 400;
+/* 아이폰 가로 모드에서 글씨 확대 금지 */
+-webkit-text-size-adjust: 100%;
+/* 폰트를 부드럽게 랜더링하기 위한 속성 */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+font-synthesis: none;
 
 }
 
 @media screen and (max-width:768px) {
-    :root {
-        font-size: 14px;
-    }
-   
+:root {
+    font-size: 14px;
+}
+
 
 } 
 body{
-        color: var(--black);
-        background-color: var(--mainBg-color);
-    }
+    color: var(--point);
+    background-color: var(--black);
+}

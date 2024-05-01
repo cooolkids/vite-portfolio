@@ -4,45 +4,20 @@
     display: flex;
     align-items: center;
     gap: 5vw;
-
 }
 
-ul.flow_list {
-    width: 100%;
-}
+
 
 .splide {
     width: 100%;
     padding: 2vw;
 }
 
-.splide .splide__track ul li {
+.splide__track ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5vw;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-family: var(--mainEng-font);
+    position: relative;
 }
 
-.splide.ltl li img {
-    width: 5vw;
-    height: 5vw;
-}
 
-.splide .splide__track-1 ul li {
-    rotate: 2deg;
-    color: transparent;
-    -webkit-text-stroke: 3px var(--black);
-}
-
-.splide .splide__track-3 {
-    background: var(--subBg100);
-    rotate: -2deg;
-}
-
-.splide.rtl ul li img {
-    width: 20vw;
-    height: 20vw;
-}

@@ -14,7 +14,6 @@ export function work(){
             scrub:1,
             invalidateOnRefresh:true,
             anticipatePin:1
-
         }
      })
 }
