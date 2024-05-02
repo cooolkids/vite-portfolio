@@ -11,24 +11,42 @@
 }
 
 
-#Home ul li img{
+#Home ul li img {
     width: 600px;
     height: 391px;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.icon{
-    width: 30%;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 9999;
+.symbol_flow{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9000;
 }
 
+.icon {
+    width: 30%;
+    position: absolute;
+    left: -500px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-.icon img{
+.icon img {
     width: 80%;
+}
+
+.symbol_text{
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    font-size: 70px;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
 }

@@ -73,7 +73,7 @@
 }
 
 .img_box.active::before{
-    height: 0;
+    width: 0;
 }
 .img_box.active::after{
     height: 0;

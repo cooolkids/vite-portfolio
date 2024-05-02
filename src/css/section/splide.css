@@ -1,6 +1,6 @@
 .i_am {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     gap: 5vw;
@@ -10,14 +10,15 @@
 
 .splide {
     width: 100%;
-    padding: 2vw;
 }
 
-.splide__track ul{
+.splide__track-1 ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
-
+.splide__track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

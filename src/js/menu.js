@@ -58,8 +58,5 @@ export function menu() {
 //     }
 // });
 
-    $('nav ul li a').click(function(){
-        $('nav ul li a').removeClass('on')
-        $(this).addClass('on')
-    })
+    
 }
