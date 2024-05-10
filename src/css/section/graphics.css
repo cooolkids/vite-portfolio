@@ -16,8 +16,8 @@
     line-height: 1.2;
     font-family: var(--mainKor-font);
     text-transform: uppercase;
-    color: var(--white);
-    border-bottom: .4vw solid var(--white);
+    color: var(--black);
+    border-bottom: .4vw solid var(--black);
     margin-bottom: 100px;
 }
 
@@ -73,31 +73,32 @@
 }
 
 .img_box.active::before{
-    width: 0;
+    width: 0%;
 }
 .img_box.active::after{
-    height: 0;
+    height: 0%;
 }
 
 .graphics_wrap .stage .img_text {
     width: 40%;
+    color: var(--black);
 }
 
 .graphics_wrap .stage .img_text p {
     line-height: 1.6px;
-    color: var(--white);
+    color: var(--black);
 }
 
 .img_text{
     position: relative;
-    top: -280px;
-    opacity: 0;
-    transition: .4s;
+    top:-100px;
+    opacity: 1;
+    transition: .8s;
 }
 
 .img_text.active{
-    opacity: 1;
-    top: -230px;
+    opacity: 0;
+    top: -200px;
 }
 
 

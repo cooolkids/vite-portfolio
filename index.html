@@ -11,10 +11,17 @@
 </head>
 
 <body>
+    <div class="preloader-c-area">
+        <div class="preloader-c c-1"></div>
+        <div class="preloader-c c-2"></div>
+        <div class="preloader-c c-3"></div>
+        <div class="preloader-c c-4"></div>
+    </div>
     <header id="header" role="banner">
         <div class="header_inner">
             <div class="header_logo"><a href="#">My Port</a></div>
-            <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu" aria-expanded="false">
+            <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu"
+                aria-expanded="false">
                 <ul>
                     <li><a href="#Home" class="on">HOME</a></li>
                     <li><a href="#Project">PROJECT</a></li>
@@ -25,43 +32,22 @@
             </nav>
             <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
                 <span></span>
-              </div>
+            </div>
         </div>
     </header>
     <main>
-        <section id="Home" class="item" data-bgColor="#3E84A8">
-            <div class="symbol_flow">
-                <div class="symbol icon">
-                    <img src="./src/imgs/icon1.png">
-                </div>
-                <div class="symbol_text">
-                 <p>Welcome To My Port</p>
-                </div>
+        <section id="Home" class="item">
+            <div class="home-wrap">
+                <div class="home-img img1"><img src="./src/imgs/mainline.png"></div>
+                <div class="home-img img2"><img src="./src/imgs/cloud1.png"></div>
+                <div class="home-img img3"><img src="./src/imgs/cloud2.png"></div>
+                <div class="home-img img4"><img src="./src/imgs/roundsticker.png"></div>
             </div>
-            <div class="i_am">
-            <ul>
-                <li class="flow_list">
-                <div class="splide" id="splide1">
-                    <div class="splide__track splide__track-1">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                            <li class="splide__slide"><img src="./src/imgs/clouddd.png"></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            </ul>
-            </div>
+
         </section>
-        <section id="Project" class="item" data-bgColor="#28527A">
+        <section id="Project" class="item">
             <div class="pj_inner">
-                <h2 class="pj_title">project</h2>
+                <h2 class="pj_title">The<br/> project:</h2>
                 <div class="pj_wrap">
                     <article class="pj_item s1">
                         <span class="num">
@@ -76,7 +62,7 @@
                         <div class="btn">
                             <a href="#">프로세서보기</a>
                             <a href="#">figma storyboard</a>
-                            <a href="#">상세보기</a>
+                            <a href="#"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>site coding</span>
@@ -97,7 +83,7 @@
                         <div class="btn">
                             <a href="#">프로세서보기</a>
                             <a href="#">figma storyboard</a>
-                            <a href="#">상세보기</a>
+                            <a href="#"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>app coding</span>
@@ -114,10 +100,10 @@
                             <div>teamwork renewal</div>
                             <div>webstandard</div>
                         </div>
-                        <h3>설화수 홈페이지</h3>
+                        <h3>심볼로고 및 브랜딩</h3>
                         <div class="btn">
                             <a href="#">프로세서보기</a>
-                            <a href="#">상세보기</a>
+                            <a href="#"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>site coding</span>
@@ -125,148 +111,146 @@
                             <span>use stack:html/scss,jqury,vanila js</span>
                         </div>
                     </article>
-                    <article class="pj_item s4">
-                        <span class="num">
-                            4.
-                        </span>
-                        <div class="text">
-                            <div>website making</div>
-                            <div>web renewal</div>
-                            <div>webstandard</div>
-                        </div>
-                        <h3>반응형 웹페이지</h3>
-                        <div class="btn">
-                            <a href="#">프로세서보기</a>
-                            <a href="#">figma storyboard</a>
-                            <a href="#">상세보기</a>
-                        </div>
-                        <div class="info">
-                            <span>site coding</span>
-                            <span>production period:04.18~04.30</span>
-                            <span>use stack:html/scss,jqury,vanila js</span>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
-        <section id="Work" class="item" data-bgColor="#13213C">
-            <div class="work_inner">
-                <h2 class="work_title">publishing</h2>
-                <div class="work_wrap">
-                    <article class="work_item w1">
-                        <span class="num">01.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/watcha.png" alt=""></a>
-                        <h3 class="title">watcha</h3>
-                        <p class="desc">Css Transform</p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w2">
-                        <span class="num">02.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/mugo.png" alt=""></a>
-                        <h3 class="title">mugo</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w3">
-                        <span class="num">03.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/woodam.png" alt=""></a>
-                        <h3 class="title">WODAMLIGHTING</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w4">
-                        <span class="num">04.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/groundseesaw.png" alt=""></a>
-                        <h3 class="title">groundseesaw</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w5">
-                        <span class="num">05.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/hakit.png" alt=""></a>
-                        <h3 class="title">hakit</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w6">
-                        <span class="num">06.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/beanpole.png" alt=""></a>
-                        <h3 class="title">beanpole</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w7">
-                        <span class="num">07.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/vans.png" alt=""></a>
-                        <h3 class="title">vans</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w8">
-                        <span class="num">08.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/10x10.png" alt=""></a>
-                        <h3 class="title">10x10</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w9">
-                        <span class="num">09.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/sulwhasoo.png" alt=""></a>
-                        <h3 class="title">sulwhasoo</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                    <article class="work_item w10">
-                        <span class="num">10.</span>
-                        <a href="#" target="_blank" class="img"><img src="./src/imgs/clio.png" alt=""></a>
-                        <h3 class="title">clio</h3>
-                        <p class="desc"></p>
-                        <a href="#" target="_blank" class="site">사이트보기</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="Graphics" class="item" data-bgColor="#13213C">
-            <div class="graphics_inner">
-                <h2 class="graph_title">graphics</h2>
-                    <article class="stage">
-                        <div class="inner">
-                            <ul class="flex">
-                                <li>
-                                    <p class="img_box">
-                                        <img src="./src/imgs/그래픽(한국야구르트).jpg" alt="">
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="img_box">
-                                        <img src="./src/imgs/그래픽10(우유).jpg" alt="">
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="img_box">
-                                        <img src="./src/imgs/그래픽2(redbull).jpg" alt="">
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="img_box">
-                                        <img src="./src/imgs/그래픽5(구달라인).jpg" alt="">
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="img_box i5">
-                                        <img src="./src/imgs/그래픽7(썬키스트).jpg" alt="">
-                                    </p>
-                                </li>
-                            </ul>
-                             <div class="img_text">
-                                <p class="title1">사람들의 이목을 집중시키는 디자인을 만듭니다.</p>
-                                <p class="title2">창의적이고 독창적인,</p>
+        <section id="Work" class="item">
+            <h2 class="work_title">publishing</h2>
+        <div class="i_am">
+                <ul>
+                    <li class="flow_list">
+                        <div class="splide" id="splide">
+                            <div class="splide__track splide__track-1">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <article class="work_item w1">
+                                            <span class="num">01.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/watcha.png" alt=""></a>
+                                            <h3 class="title">watcha</h3>
+                                            <p class="desc">Css Transform</p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w2">
+                                            <span class="num">02.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/mugo.png" alt=""></a>
+                                            <h3 class="title">mugo</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w3">
+                                            <span class="num">03.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/woodam.png" alt=""></a>
+                                            <h3 class="title">WODAMLIGHTING</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w4">
+                                            <span class="num">04.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/hakit.png" alt=""></a>
+                                            <h3 class="title">hakit</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w5">
+                                            <span class="num">05.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/beanpole.png" alt=""></a>
+                                            <h3 class="title">beanpole</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w6">
+                                            <span class="num">06.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/vans.png" alt=""></a>
+                                            <h3 class="title">vans</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w7">
+                                            <span class="num">07.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/10x10.png" alt=""></a>
+                                            <h3 class="title">10x10</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w8">
+                                            <span class="num">08.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/sulwhasoo.png" alt=""></a>
+                                            <h3 class="title">sulwhasoo</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <article class="work_item w9">
+                                            <span class="num">09.</span>
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/clio.png" alt=""></a>
+                                            <h3 class="title">clio</h3>
+                                            <p class="desc"></p>
+                                            <a href="#" target="_blank" class="site">사이트보기</a>
+                                        </article>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </article>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section id="About" class="item" data-bgColor="#0B111D">
+        <section id="Graphics" class="item">
+            <div class="graphics_inner">
+                <h2 class="graph_title">graphics</h2>
+                <article class="stage">
+                    <div class="inner">
+                        <ul class="flex">
+                            <li>
+                                <p class="img_box">
+                                    <img src="./src/imgs/구달(수정본).jpg" alt="">
+                                </p>
+                            </li>
+                            <li>
+                                <p class="img_box">
+                                    <img src="./src/imgs/레드불(수정).jpg" alt="">
+                                </p>
+                            </li>
+                            <li>
+                                <p class="img_box">
+                                    <img src="./src/imgs/플리마켓포스터(수정2).jpg" alt="">
+                                </p>
+                            </li>
+                            <li>
+                                <p class="img_box">
+                                    <img src="./src/imgs/예술창작포스터(수정).jpg" alt="">
+                                </p>
+                            </li>
+                            <li>
+                                <p class="img_box i5">
+                                    <img src="./src/imgs/그래픽7(썬키스트).jpg" alt="">
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="img_text">
+                            <p class="title1">사람들의 이목을 집중시키는 디자인을 만듭니다.</p>
+                            <p class="title2">창의적이고 독창적인,</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="About" class="item">
             <div class="about_inner">
                 <h2 class="about_title">About Me</h2>
                 <div class="about_desc">
