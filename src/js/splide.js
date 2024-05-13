@@ -8,7 +8,7 @@ export function splide() {
         type:"loop",
         drag: false,
         autoWidth: true,
-        gap:30,
+        gap:0,
         pagination: false,
         // focus:'center',
         arrows: false,
