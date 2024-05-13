@@ -17,14 +17,13 @@
     font-family: var(--mainKor-font);
     text-transform: uppercase;
     color: var(--black);
-    margin-bottom: 100px;
-  
+    margin-bottom: 200px;
 }
 
 .pj_item {
     position: sticky;
     width: 50%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,16 +95,25 @@
     text-transform: uppercase;
 }
 
+a.arrow:hover img{
+    transform: scale(1.1) rotate(-15deg);
+}
+
 /* --------------------------------------- */
 
 @media screen and (max-width:768px) {
     .pj_title {
         width: 100%;
         margin-bottom: 10vw;
-        font-size: 30px;
+        font-size: 50px;
         height: auto;
-        top: 30px;
+        margin-left: 30px;
+        top: 200px;
         z-index: 9999;
+    }
+
+    .pj_item{
+        border: 1px solid #e0e0e0;
     }
     
     .pj_item.s1{top: 10px;}

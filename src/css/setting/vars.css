@@ -49,6 +49,6 @@ font-synthesis: none;
 } 
 
 body{
-    color: var(--point);
+    color: var(--black);
     background: #f3f3f3;
 }

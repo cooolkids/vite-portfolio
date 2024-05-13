@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { Fancybox } from "@fancyapps/ui";
 
 export function graphics(){
     gsap.utils.toArray('.img_box').forEach(function(imgBox){
@@ -19,4 +20,9 @@ export function graphics(){
             scrub:1
         }})
     })
+    Fancybox.bind("[data-fancybox]", {
+
+    });
+   
+
 }
