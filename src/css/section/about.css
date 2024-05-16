@@ -1,16 +1,35 @@
-#About{
+#About {
     width: 100%;
-    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.about_inner {
+#About2{
     width: 100%;
     height: 100vh;
 }
 
+#AboutMe {
+    width: 250%;
+    height: 100vh;
+}
+
+.about-item {
+    width: 100%;
+}
+
+.about-wrap {
+    width: 100%;
+    display: flex;
+}
+
+#About img {
+    width: 100%;
+}
+
 .about_title {
     position: sticky;
-    top: 70px;
+    top: 10px;
     left: 0;
     width: 48%;
     height: 6vw;
@@ -24,51 +43,105 @@
     padding-left: 20px;
 }
 
+/* about */
 
-
-.about_desc {
-    width: 60%;
-}
-
-.about_item{
-    position: absolute;
-    cursor: pointer;
-}
-
-.license ul li{
+.about_inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about_item img{
-    width: 80%;
+.item_img {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.about1-wrap img {
+    width: 30%;
+}
+
+.about-tx{
+    /* position: absolute; */
+    font-size: 5vw;
+    font-style: bold;
 }
 
 
 
-@media screen and (max-width:768px) {
-  
-    .about_title {
-        width: 100%;
-        height: auto;
-        margin-bottom: 16px;
-        font-size: 30px;
-        top: -30px;
-    }
-
-    .about_desc {
-        width: 100%;
-    }
-
-    .about_desc::before{
-        display: none;
-    }
-
-    .about_item img{
-        width: 60%;
-    }
-
-
-   
+/* aboutme */
+.aboutme-sticky{
+    position: sticky;
+    width: 50%;
+    height: 100vh;
+    object-fit: contain;
+    left: 0;
+    top: 0;
 }
+
+
+.a1 {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ability .item_line {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 40%;
+}
+
+.a1 .me {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.wrap2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wrap2 .intro_text {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-style: bolder;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item_intro {
+    width: 50%;
+}
+
+.intro_more img {
+    width: 100%;
+}
+
+.ex-wrap {
+    width: 50%;
+}
+
+.item_explain {
+    font-size: 2.5vw;
+}
+
+
+@media screen and (max-width:768px) {}

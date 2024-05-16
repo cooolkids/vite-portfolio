@@ -104,21 +104,21 @@ a.arrow:hover img{
 @media screen and (max-width:768px) {
     .pj_title {
         width: 100%;
-        margin-bottom: 10vw;
-        font-size: 50px;
+        font-size: 40px;
         height: auto;
         margin-left: 30px;
-        top: 200px;
-        z-index: 9999;
+        top: 20px;
+        z-index: 10;
     }
 
     .pj_item{
+        width: 100%;
         border: 1px solid #e0e0e0;
     }
     
-    .pj_item.s1{top: 10px;}
-    .pj_item.s2{top: 100px;}
-    .pj_item.s3{top: 200px;}
+    .pj_item.s1{top: 120px;}
+    .pj_item.s2{top: 220px;}
+    .pj_item.s3{top: 320px;}
 
     .pj_item .num{
         font-size: 40px;

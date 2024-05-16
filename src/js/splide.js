@@ -6,7 +6,7 @@ export function splide() {
 
     new Splide('#splide',{
         type:"loop",
-        drag: false,
+        drag: true,
         autoWidth: true,
         gap:0,
         pagination: false,

@@ -13,6 +13,10 @@
 
 <body>
     <div class="preloader-c-area">
+        <div class="intro-text">Into the PORT</div>
+        <div class="intro_line"></div>
+        <div id="loading-number">0</div>
+        <div class="intro_line2"></div>
         <div class="preloader-c c-1"></div>
         <div class="preloader-c c-2"></div>
         <div class="preloader-c c-3"></div>
@@ -20,7 +24,7 @@
     </div>
     <header id="header" role="banner">
         <div class="header_inner">
-            <div class="header_logo"><a href="#"><img src="./src/imgs/mylogo.png">MY Port</a></div>
+            <div class="header_logo"><a href="./index.html"><img src="./src/imgs/mylogo.png">MY Port</a></div>
             <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu"
                 aria-expanded="false">
                 <ul>
@@ -57,11 +61,13 @@
                     <div class="items__layer layer" data-depth="0.24">
                         <div class="items__item img5"><img src="./src/imgs/combine2.png"></div>
                     </div>
-                    
                 </div>
-                <div class="line">
-                    <h1 class="typing">welcome to my port</h1>
-                </div>
+                <h1>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "welcome to my port" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+
             </div>
 
         </section>
@@ -74,20 +80,19 @@
                             1.
                         </span>
                         <div class="text">
-                            <div>WEB project</div>
-                            <div>teamwork renewal</div>
-                            <div>webstandard</div>
+                            <div>WEB renewal</div>
+                            <div>teamwork project</div>
                         </div>
                         <h3>그라운드시소 리뉴얼</h3>
                         <div class="btn">
                             <a href="#">프로세서보기</a>
-                            <a href="#">figma storyboard</a>
+                            <a href="#">design system</a>
                             <a href="#" class="arrow"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>site coding</span>
-                            <span>production period:02.05~02.23</span>
-                            <span>use stack:html/scss,jqury,vanila js</span>
+                            <span>production period:12.07~02.07</span>
+                            <span>use stack:html,css,jquery,vanila js</span>
                         </div>
                     </article>
                     <article class="pj_item s2">
@@ -97,18 +102,17 @@
                         <div class="text">
                             <div>APP project</div>
                             <div>develop application</div>
-                            <div>appstandard</div>
                         </div>
                         <h3>MYSELF 앱 만들기</h3>
                         <div class="btn">
                             <a href="#">프로세서보기</a>
-                            <a href="#">figma storyboard</a>
+                            <a href="#">design system</a>
                             <a href="#" class="arrow"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>app coding</span>
-                            <span>production period:03.05~03.23</span>
-                            <span>use stack:html/scss,jqury,vanila js</span>
+                            <span>production period:02.16~04.23</span>
+                            <span>use stack:html,css,jquery,vanila js</span>
                         </div>
                     </article>
                     <article class="pj_item s3">
@@ -116,19 +120,19 @@
                             3.
                         </span>
                         <div class="text">
-                            <div>WEB project</div>
-                            <div>teamwork renewal</div>
-                            <div>webstandard</div>
+                            <div>symbol logo</div>
+                            <div>personal project</div>
                         </div>
                         <h3>심볼로고 및 브랜딩</h3>
                         <div class="btn">
                             <a href="#">프로세서보기</a>
+                            <a href="#">design system</a>
                             <a href="#" class="arrow"><img src="./src/imgs/arrow.png"></a>
                         </div>
                         <div class="info">
                             <span>site coding</span>
                             <span>production period:03.25~04.13</span>
-                            <span>use stack:html/scss,jqury,vanila js</span>
+                            <span>use stack:html/scss,jquery,vanila js</span>
                         </div>
                     </article>
                 </div>
@@ -162,13 +166,13 @@
                                     </li>
                                     <li class="splide__slide">
                                         <article class="work_item w4">
-                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/hakit.png"
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/hakit.jpg"
                                                     alt=""></a>
                                         </article>
                                     </li>
                                     <li class="splide__slide">
                                         <article class="work_item w5">
-                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/beanpole.png"
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/beanpole.jpg"
                                                     alt=""></a>
                                         </article>
                                     </li>
@@ -180,7 +184,7 @@
                                     </li>
                                     <li class="splide__slide">
                                         <article class="work_item w7">
-                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/10x10.png"
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/10x10.jpg"
                                                     alt=""></a>
                                         </article>
                                     </li>
@@ -192,7 +196,7 @@
                                     </li>
                                     <li class="splide__slide">
                                         <article class="work_item w9">
-                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/clio.png"
+                                            <a href="#" target="_blank" class="img"><img src="./src/imgs/clio.jpg"
                                                     alt=""></a>
                                         </article>
                                     </li>
@@ -208,15 +212,12 @@
                 <h2 class="graph_title">graphics</h2>
                 <article class="stage">
                     <div class="inner">
-                        <div class="img_text">
+                        <!-- <div class="img_text">
                             <p class="title1">사람들의 이목을 집중시키는 디자인을 만듭니다.</p>
-                        </div>
+                        </div> -->
                         <div class="img-wrap">
                             <div class="img-inner">
-                                <ul class="poster flex">
-                                    <li class="pt pt-pd">
-                                        <p>poster</p>
-                                    </li>
+                                <ul class="column">
                                     <li class="p1">
                                         <p class="img_box">
                                             <a href="./src/imgs/플리마켓포스터(수정2).jpg" data-fancybox="gallery"><img
@@ -230,7 +231,7 @@
                                         </p>
                                     </li>
                                 </ul>
-                                <ul class="ad flex">
+                                <ul class="column2">
                                     <li class="ad1">
                                         <p class="img_box">
                                             <a href="./src/imgs/구달.jpg" data-fancybox="gallery"><img
@@ -243,21 +244,19 @@
                                                     src="./src/imgs/레드불썸네일.jpg" alt=""></a>
                                         </p>
                                     </li>
-                                    <li class="pt pt-a">
-                                        <p>graphic</p>
-                                    </li>
                                 </ul>
-                                <ul class="detail flex">
-                                    <li class="detail1">
-                                        <p class="img_box"><a href="./src/imgs/travellog.jpg"
-                                                data-fancybox="gallery"><img src="./src/imgs/트레블로그 썸네일.jpg"></a></p>
+                                <ul class="column3">
+                                    <li class="d1">
+                                        <p class="img_box">
+                                            <a href="./src/imgs/travellog.jpg" data-fancybox="gallery"><img
+                                                    src="./src/imgs/트레블로그 썸네일.jpg" alt=""></a>
+                                        </p>
                                     </li>
-                                    <li class="detail2">
-                                        <p class="img_box"><a href="./src/imgs/winsaf.jpg" data-fancybox="gallery"><img
-                                                    src="./src/imgs/윈세프썸네일.jpg"></a></p>
-                                    </li>
-                                    <li class="pt pt-pd">
-                                        <p>detail page</p>
+                                    <li class="d2">
+                                        <p class="img_box">
+                                            <a href="./src/imgs/winsaf.jpg" data-fancybox="gallery"><img
+                                                    src="./src/imgs/윈세프썸네일.jpg" alt=""></a>
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
@@ -267,37 +266,84 @@
             </div>
         </section>
         <section id="About" class="item">
+            <h2 class="about_title">about me</h2>
             <div class="about_inner">
-                <h2 class="about_title">About Me</h2>
-                <div class="about_desc">
-                    <div class="explain">
-                       <div class="about_item me">
-                        <h3>안녕하세요 저는 김가현입니다</h3>
-                        <p>1998.04.29</p>
-                        <p></p>
-                       </div>
-                    <div class="about_item license">
-                        <ul>
-                            <li><img src="./src/imgs/html.png">
-                            <p>94%</p>
-                            </li>
-                            <li><img src="./src/imgs/css.png">
-                                <p>92%</p></li>
-                            <li><img src="./src/imgs/ps.png">
-                                <p>97%</p></li>
-                            <li><img src="./src/imgs/ai.png">
-                                <p>96%</p></li>
-                            <li><img src="./src/imgs/figma.png">
-                                <p>95%</p></li>
-                        </ul>
+                <article class="about-tx at1">
+                    <div class="about1-wrap">
+                        <div class="item_img img"><img src="./src/imgs/apicon.png"></div>
+                        <div class="item_text text t1">
+                            Port란 "항구"로서
+                        </div>
+                        <div class="item_text text t2">
+                            출발,경유,도착 지점의
+                        </div>
+                        <div class="item_text text t3">
+                            의미를 담고 있습니다.
+                        </div>
                     </div>
-                    <div class="about_item career">
+                </article>
+            </div>
+        </section>
+        <section id="About2">
+            <div class="about_inner">
+                <article class="about-tx at2">
+                    <div class="about2-wrap">
+                        <div class="item_text text t4">
+                            <p>나만의 항구를 만들어내어</p>
+                        </div>
+                        <div class="item_text text t5">
+                            <p>창의적이고 독창적인</p>
+                        </div>
+                        <div class="item_text text t6">
+                            <p>UIUX디자이너가 되겠습니다.</p>
+                        </div>
                     </div>
-                   </div>
+                </article>
+            </div>
+        </section>
+        <section id="AboutMe">
+            <div class="about-inner">
+                <div class="about-wrap wrap1">
+                     <div class="aboutme-sticky"><img src="./src/imgs/하늘.png"></div>
+                    <article class="about-item a1">
+                        <div class="ability">
+                        </div>
+                        <div class="license">
+                            <div class="item_text">GTQ 그래픽기술자격 1급</div>
+                            <div class="item_text">GTQ 일러스트 1급</div>
+                        </div>
+                        <div class="item_img me"><img src="./src/imgs/나2 1.png"></div>
+                    </article>
+                    <article class="about-item a2">
+                        <div class="about-wrap wrap2">
+                            <ul class="item_intro">
+                                <li class="intro_text">
+                                    <p>what about me</p>
+                                </li>
+                                <li class="intro1"><img src="./src/imgs/circleline.png"></li>
+                            </ul>
+                            <div class="intro_more"><img src="./src/imgs/more-icon.png"></div>
+                            <div class="ex-wrap">
+                                <ul class="item_explain">
+                                    <li class="age">
+                                        <p>1998.04.29</p>
+                                    </li>
+                                    <li class="career">
+                                        <p>닥터마틴 근무</p>
+                                    </li>
+                                    <li class="shortex">
+                                        <p>안녕하세요 저는 김가현입니다.</p>
+                                    </li>
+                                    <li class="contact">
+                                        <p>010-2XXX-3722</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-
     </main>
     <script type="module" src="./src/js/main.js"></script>
 
