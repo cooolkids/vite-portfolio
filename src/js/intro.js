@@ -7,25 +7,12 @@ import Parallax from 'parallax-js';
 export function intro() {
   const ani1 = gsap.timeline();
 
-  ani1.from('#header', { opacity: 0, onComplete: hideHeader})
-      .from(".preloader-c.c-1", { scale: 0 })
-      .from(".preloader-c.c-2", { scale: 0 })
-      .from(".preloader-c.c-3", { scale: 0 })
-      .from(".preloader-c.c-4", { scale: 0 })
-      .to(".preloader-c.c-1", { scale: 100 })
-      .to(".preloader-c.c-2", { scale: 100 })
-      .to(".preloader-c.c-3", { scale: 100 })
-      .to(".preloader-c.c-4", { scale: 100 })
-      .to(".preloader-c-area", { opacity: 0, onComplete:showHeader,hideGsap });
-
-  scrollTo({
-    animation: ani1,
-    duration: 3,
-    scrub: true,
-    pin: true,
-    ease: 'none',
-    anticipatePin: 1
-  });
+  ani1.from('#header', {opacity:0,onComplete: hideHeader})
+      .to(".preloader-c.c-1", { scale: 1 })
+      .to(".preloader-c.c-2", { scale: 1 })
+      .to(".preloader-c.c-3", { scale: 1 })
+      .to(".preloader-c.c-4", { scale: 1 })
+      .to(".preloader-c-area", { opacity: 0 ,onComplete:showHeader });
   
 
   gsap.utils.toArray('.intro_line').forEach(function(introline){
@@ -65,10 +52,7 @@ function increaseLoadingNumber() {
   var parallax = new Parallax(scene);
 
 
-function hideGsap(){
-  var preloader =document.querySelector('.preloader-c-area')
-  preloader.style.top='-';
-}
+
 
 function hideHeader() {
   // 헤더 요소 선택
@@ -88,6 +72,7 @@ function showHeader() {
   // 헤더 보이기
   header.style.display = 'block';
   main.style.display='block';
+  ScrollTrigger.getAll().forEach(trigger => trigger.disable());
 
 }
 
@@ -145,6 +130,6 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333}";
   document.body.appendChild(css);
 };

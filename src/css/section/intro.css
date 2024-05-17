@@ -45,15 +45,49 @@
     opacity: 10%;
 }
 
+.home-wrap h1::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 48%;
+    border: 2px solid #333;
+    right:50px;
+    bottom: 20px;
+}
+
+.home-wrap h1::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 99%;
+    right: 70px;
+    bottom: 30px;
+    border: 2px solid #333;
+    transition: .35s;
+    animation: mouse 2s infinite;
+}
+
+
+
+@keyframes mouse{
+    0%{
+        bottom: 60px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+
 a.typewrite{
     width: 100%;
     position: absolute;
     padding-left: 20px;
-    left: 0;
+    right: 0;
     bottom: 0;
     font-size: 6vw;
     text-transform: uppercase;
-    border-top: 2px solid var(--black300);
 }
 
 #loading-number {
@@ -120,7 +154,7 @@ a.typewrite{
     height: 150em;
     border-radius: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0);
 }
 
 .preloader-c.c-1 {
