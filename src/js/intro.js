@@ -5,6 +5,9 @@ import Parallax from 'parallax-js';
 
 
 export function intro() {
+
+
+
   const ani1 = gsap.timeline();
 
   ani1.from('#header', {opacity:0,onComplete: hideHeader})
@@ -72,9 +75,8 @@ function showHeader() {
   // 헤더 보이기
   header.style.display = 'block';
   main.style.display='block';
-  ScrollTrigger.getAll().forEach(trigger => trigger.disable());
-
 }
+
 
 
 var TxtType = function(el, toRotate, period) {

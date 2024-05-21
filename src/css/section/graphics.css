@@ -159,14 +159,19 @@
     .img_text {
         position: relative;
         right: -120px;
-        top: -100px;
+        top: -70px;
         opacity: 0;
         transition: .4s;
+        font-size: 3vw;
     }
 
     .img_text.active {
         opacity: 1;
-        top: -50px;
+        top: -70px;
+    }
+
+    .ex{
+        display: none;
     }
 
 }
