@@ -9,7 +9,7 @@ import {splide} from "./splide.js"
 window.addEventListener('load',function(){
   menu()
   graphics()
-  // intro()
+  intro()
   link()
   smooth()
   about()
